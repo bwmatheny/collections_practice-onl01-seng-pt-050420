@@ -28,5 +28,14 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sum 
+  array.sum
+end
+
+def add_s(array)
+  array.collect do |word|
+    if array[1] == word
+      word
+    else
+      word = "s"
+    end
 end
